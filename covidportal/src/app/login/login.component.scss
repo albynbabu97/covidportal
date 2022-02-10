@@ -1,0 +1,27 @@
+.container-fluid {
+    // background-color: #e1e1e1;
+}
+
+.login-card {
+    width: 54%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px 2px #e2e2e2;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    letter-spacing: 1px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    background-color: blue;
+    box-shadow: 1px 1px 3px 2px #c3c5f1;
+}
