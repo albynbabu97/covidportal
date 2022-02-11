@@ -9,13 +9,15 @@ import { DashboardComponent } from './application/dashboard/dashboard.component'
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './services/auth.guard';
+import { CountryComponent } from './application/country/country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ApplicationComponent,
-    DashboardComponent
+    DashboardComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,

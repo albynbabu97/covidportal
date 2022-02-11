@@ -1,0 +1,66 @@
+.dashboard-screen {
+    width: calc(100% - 50px);
+}
+
+.section {
+    height: 46%;
+}
+
+.section.heading {
+    height: 7%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card {
+    box-shadow: 0 0 6px 3px #e2e2e2;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4e43ff;
+    margin: 0;
+}
+
+.card-body .label {
+    font-size: 18px;
+}
+
+.card-body .value {
+    font-size: 28px;
+    color: blue;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.card-body .card {
+    width: 80%;
+    box-shadow: 2px 2px 8px 3px #e2e2e2;
+}
+
+.card-body .col-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.case-card {
+    background: linear-gradient(to bottom, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
+    color: #002c56;
+}
+
+.recovered-card {
+    background: linear-gradient(to bottom, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
+    color: #015b25;
+}
+
+.death-card {
+    background: linear-gradient(to bottom, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
+    color: #5a0502;
+}

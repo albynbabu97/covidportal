@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ApplicationComponent } from './application/application.component';
+import { CountryComponent } from './application/country/country.component';
 import { DashboardComponent } from './application/dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/auth.guard';
@@ -27,6 +28,15 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent, canActivate: [AuthGuard],
+      },
+      {
+        path: 'countrystat',
+        component: CountryComponent, canActivate: [AuthGuard],
+      },
+      {
+        path: '**',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
       }
     ]
   },

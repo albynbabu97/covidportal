@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -8,7 +9,7 @@ export class AuthService {
 
   isLogin = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   login(value: any) {
     if((value.username === environment.username) && (value.password === environment.password)) {
@@ -22,6 +23,7 @@ export class AuthService {
 
   logout() {
     localStorage.setItem('STATE_CP', 'false');
+    this.router.navigate(['/login']);
     return true;
   }
 

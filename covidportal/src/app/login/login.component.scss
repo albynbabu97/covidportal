@@ -3,7 +3,8 @@
 }
 
 .login-card {
-    width: 54%;
+    width: 52%;
+    border-radius: 6px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +19,7 @@ input {
 }
 
 button {
-    padding: 5px;
+    padding: 8px;
     border-radius: 20px;
     border: none;
     color: #ffffff;

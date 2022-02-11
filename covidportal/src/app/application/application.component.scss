@@ -1,0 +1,44 @@
+.sidebar {
+    background: #4e43ff;
+    width: 50px;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 0 6px 3px #babac1
+}
+
+.sidebar div {
+    height: 50px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: 5px solid #4e43ff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sidebar div.active, .sidebar div:hover {
+    border-left: 5px solid #00ffb6;
+}
+
+.sidebar .dashboard-menu {
+    background-image: url("../../assets/images/dashboard-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64%;
+}
+
+.sidebar .country-menu {
+    background-image: url("../../assets/images/flag.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.sidebar .logout {
+    background-image: url("../../assets/images/logout.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64%;
+    bottom: 10px;
+}

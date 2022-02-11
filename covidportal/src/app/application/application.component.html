@@ -1,1 +1,10 @@
-<p>application works!</p>
+<div class="dashboard container-fluid h-100 p-0 d-flex w-100">
+    <div class="sidebar position-relative">
+        <div class="row dashboard-menu" routerLink="/dashboard" [routerLinkActive]="['active']"></div>
+        <div class="row country-menu" routerLink="/countrystat" [routerLinkActive]="['active']"></div>
+        <div class="row logout position-absolute" (click)="logout()"></div>
+    </div>
+    <div class="w-100">
+        <router-outlet class="w-100 h-100"></router-outlet>
+    </div>
+</div>

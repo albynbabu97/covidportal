@@ -1,1 +1,57 @@
-<p>dashboard works!</p>
+<div class="container-fluid dashboard-screen h-100 p-4 w-100">
+    <div class="section heading row p-2 w-100">Dashboard</div>
+    <div class="section row p-2 w-100">
+        <div class="w-100">
+            <div class="card-title">
+                Total
+            </div>
+            <div class="card-body row">
+                <div class="col-4 border-right text-center m-auto">
+                    <div class="card p-4 case-card">
+                        <span class="label">Total Cases</span><br/>
+                        <span class="value">{{totalReport?.cases | number: '2.'}}</span>
+                    </div>
+                </div>
+                <div class="col-4 border-right text-center m-auto">
+                    <div class="card p-4 death-card">
+                        <span class="label">Total Deaths</span><br/>
+                        <span class="value">{{totalReport?.deaths | number: '2.'}}</span>
+                    </div>
+                </div>
+                <div class="col-4 text-center m-auto">
+                    <div class="card p-4 recovered-card">
+                        <span class="label">Total Recovered</span><br/>
+                        <span class="value">{{totalReport?.recovered | number: '2.'}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section row p-2 w-100">
+        <div class="w-100">
+            <div class="card-title">
+                Today
+            </div>
+            <div class="card-body row">
+                <div class="col-4 border-right text-center m-auto">
+                    <div class="card p-4 case-card">
+                        <span class="label">Cases</span><br/>
+                        <span class="value">{{todayReport?.cases | number: '2.'}}</span>
+                    </div>
+                </div>
+                <div class="col-4 border-right text-center m-auto">
+                    <div class="card p-4 death-card">
+                        <span class="label">Deaths</span><br/>
+                        <span class="value">{{todayReport?.deaths | number: '2.'}}</span>
+                    </div>
+                </div>
+                <div class="col-4 text-center m-auto">
+                    <div class="card p-4 recovered-card">
+                        <span class="label">Recovered</span><br/>
+                        <span class="value">{{todayReport?.recovered | number: '2.'}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

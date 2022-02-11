@@ -2,6 +2,12 @@
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+@font-face {
+    font-family: 'Quicksand';
+    src: url("./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
+}
+
 html, body {
     min-height: 100vh;
     height: 100%;
@@ -11,8 +17,13 @@ body {
     margin: 0;
     width: 100%;
     max-width: 100%;
+    font-family: "Quicksand", sans-serif !important;
 }
 
 * {
     outline: none;
+}
+
+.card {
+    border: none !important;
 }
