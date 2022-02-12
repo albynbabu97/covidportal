@@ -7,3 +7,44 @@
     font-size: 20px;
     font-weight: 600;
 }
+
+.row {
+    margin: 0 !important;
+}
+
+.mat-card {
+    border-radius: 8px;
+}
+
+.country-name {
+    color: #4e43ff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.edit-btn {
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    padding: 3px;
+    border: 1px solid #4e43ff;
+    box-shadow: 2px 2px 3px 1px #d7d7d7;
+    background: transparent;
+}
+
+mat-card-body .row {
+    height: 50px !important;
+}
+
+.value {
+    font-weight: bold;
+}
+
+.scroll-overflow {
+    overflow-y: scroll;
+    max-height: calc(100% - 42px);
+}
+
+mat-form-field {
+    height: 50px;
+}

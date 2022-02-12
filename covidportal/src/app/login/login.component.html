@@ -8,8 +8,15 @@
                 <div class="login-card card">
                     <div class="card-body p-5">
                         <form (ngSubmit)="login()" role="form" name="loginForm" novalidate>
-                            <input class="mt-3 mb-5 w-100" name="username" [(ngModel)]="username" placeholder="Username" type="text" autofocus>
-                            <input class="mb-5 w-100" name="password" [(ngModel)]="password" placeholder="Password" type="password">
+
+                            <input matInput class="mt-3 mb-5 w-100"
+                                name="username" [(ngModel)]="username"
+                                placeholder="Username" type="text" />
+
+                            <input class="mb-5 w-100"
+                                name="password" [(ngModel)]="password"
+                                placeholder="Password" type="password" />
+
                             <button class="mb-3 mt-4 w-100" type="submit" [disabled]="!(!!username && !!password)">Login</button>
                         </form>
                     </div>

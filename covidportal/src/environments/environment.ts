@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   username: "fingent",
   password: "fingent",
-  dashboardApiUrl: "https://corona.lmao.ninja/v2/all"
+  dashboardApiUrl: "https://corona.lmao.ninja/v2/all",
+  countryApi: "https://corona.lmao.ninja/v2/countries"
 };
 
 /*

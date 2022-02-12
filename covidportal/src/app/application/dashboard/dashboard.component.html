@@ -7,22 +7,22 @@
             </div>
             <div class="card-body row">
                 <div class="col-4 border-right text-center m-auto">
-                    <div class="card p-4 case-card">
+                    <mat-card class="mat-elevation-z8 card p-4 case-card">
                         <span class="label">Total Cases</span><br/>
                         <span class="value">{{totalReport?.cases | number: '2.'}}</span>
-                    </div>
+                    </mat-card>
                 </div>
                 <div class="col-4 border-right text-center m-auto">
-                    <div class="card p-4 death-card">
+                    <mat-card class="mat-elevation-z8 card p-4 death-card">
                         <span class="label">Total Deaths</span><br/>
                         <span class="value">{{totalReport?.deaths | number: '2.'}}</span>
-                    </div>
+                    </mat-card>
                 </div>
                 <div class="col-4 text-center m-auto">
-                    <div class="card p-4 recovered-card">
+                    <mat-card class="mat-elevation-z8 card p-4 recovered-card">
                         <span class="label">Total Recovered</span><br/>
                         <span class="value">{{totalReport?.recovered | number: '2.'}}</span>
-                    </div>
+                    </mat-card>
                 </div>
             </div>
         </div>
@@ -34,22 +34,22 @@
             </div>
             <div class="card-body row">
                 <div class="col-4 border-right text-center m-auto">
-                    <div class="card p-4 case-card">
+                    <mat-card class="mat-elevation-z8 card p-4 case-card">
                         <span class="label">Cases</span><br/>
                         <span class="value">{{todayReport?.cases | number: '2.'}}</span>
-                    </div>
+                    </mat-card>
                 </div>
                 <div class="col-4 border-right text-center m-auto">
-                    <div class="card p-4 death-card">
+                    <mat-card class="mat-elevation-z8 card p-4 death-card">
                         <span class="label">Deaths</span><br/>
                         <span class="value">{{todayReport?.deaths | number: '2.'}}</span>
-                    </div>
+                    </mat-card>
                 </div>
                 <div class="col-4 text-center m-auto">
-                    <div class="card p-4 recovered-card">
+                    <mat-card class="mat-elevation-z8 card p-4 recovered-card">
                         <span class="label">Recovered</span><br/>
                         <span class="value">{{todayReport?.recovered | number: '2.'}}</span>
-                    </div>
+                    </mat-card>
                 </div>
             </div>
         </div>

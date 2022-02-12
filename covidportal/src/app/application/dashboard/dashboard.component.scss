@@ -12,8 +12,8 @@
     font-weight: 600;
 }
 
-.card {
-    box-shadow: 0 0 6px 3px #e2e2e2;
+.mat-card {
+    // box-shadow: 0 0 6px 3px #e2e2e2;
     border-radius: 8px;
     padding: 12px;
 }
@@ -40,9 +40,10 @@
     letter-spacing: 1.5px;
 }
 
-.card-body .card {
+.card-body .mat-card {
     width: 80%;
-    box-shadow: 2px 2px 8px 3px #e2e2e2;
+    // box-shadow: 2px 2px 8px 3px #e2e2e2;
+    line-height: 36px;
 }
 
 .card-body .col-4 {

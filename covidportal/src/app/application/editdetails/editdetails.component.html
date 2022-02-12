@@ -1,0 +1,35 @@
+<div class="container-fluid country-screen h-100 p-4 w-100">
+    <div class="section heading row p-2 w-100">Edit {{countryDetails?.name}}</div>
+    <div class="row">
+        <mat-card class="mat-elevation-z8 w-100 p-4">
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-6 mt-2">
+                        <label>Cases</label>
+                        <input type="number" class="w-100" [(ngModel)]=countryDetails.cases/>
+                    </div>
+                    <div class="col-6 mt-2">
+                        <label>Deaths</label>
+                        <input type="number" class="w-100" [(ngModel)]=countryDetails.deaths/>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <label>Recovered</label>
+                        <input type="number" class="w-100" [(ngModel)]=countryDetails.recovered/>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <label>Tests</label>
+                        <input type="number" class="w-100" [(ngModel)]=countryDetails.tests/>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-6 mt-4 text-right">
+                        <button mat-raised-button class="mr-2" routerLink="/countrystat">Cancel</button>
+                        <button mat-raised-button color="primary" class="ml-2" (click)="submitChanges()">Save</button>
+                    </div>
+                    <div class="col-12" style="color: red; font-weight: bold;" *ngIf="submitError">
+                        All fields are mandatory!
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
