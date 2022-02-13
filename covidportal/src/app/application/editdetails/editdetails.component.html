@@ -4,29 +4,41 @@
         <mat-card class="mat-elevation-z8 w-100 p-4">
             <mat-card-content>
                 <div class="row">
-                    <div class="col-6 mt-2">
+                    <div class="col-6 mt-3">
                         <label>Cases</label>
                         <input type="number" class="w-100" [(ngModel)]=countryDetails.cases/>
+                        <div style="color: red;" *ngIf="!(!!countryDetails.cases)">
+                            No. of cases cannot be null
+                        </div>
                     </div>
-                    <div class="col-6 mt-2">
+                    <div class="col-6 mt-3">
                         <label>Deaths</label>
                         <input type="number" class="w-100" [(ngModel)]=countryDetails.deaths/>
+                        <div style="color: red;" *ngIf="!(!!countryDetails.deaths)">
+                            No. of deaths cannot be null
+                        </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-6 mt-5">
                         <label>Recovered</label>
                         <input type="number" class="w-100" [(ngModel)]=countryDetails.recovered/>
+                        <div style="color: red;" *ngIf="!(!!countryDetails.recovered)">
+                            No. of recovered cannot be null
+                        </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-6 mt-5">
                         <label>Tests</label>
                         <input type="number" class="w-100" [(ngModel)]=countryDetails.tests/>
+                        <div style="color: red;" *ngIf="!(!!countryDetails.tests)">
+                            No. of tests cannot be null
+                        </div>
                     </div>
                     <div class="col-6"></div>
                     <div class="col-6 mt-4 text-right">
                         <button mat-raised-button class="mr-2" routerLink="/countrystat">Cancel</button>
                         <button mat-raised-button color="primary" class="ml-2" (click)="submitChanges()">Save</button>
                     </div>
-                    <div class="col-12" style="color: red; font-weight: bold;" *ngIf="submitError">
-                        All fields are mandatory!
+                    <div class="col-12 text-center" style="color: red;" *ngIf="submitError">
+                        All fields are mandatory
                     </div>
                 </div>
             </mat-card-content>

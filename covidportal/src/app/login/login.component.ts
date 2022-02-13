@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
 
   username = "";
   password = "";
+  loginError: boolean = false;
 
   ngOnInit(): void {
     if(this.authService.isLoggedIn()) {
@@ -24,8 +25,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log('login');
     if(!!this.username && !!this.password) {
+      this.loginError = true;
       let value = {
         "username": this.username,
         "password": this.password
@@ -34,6 +35,8 @@ export class LoginComponent implements OnInit {
 
       if(response) {
         this.router.navigate(['dashboard']);
+      } else {
+        this.loginError = true;
       }
     }
   }

@@ -41,10 +41,10 @@ mat-card-body .row {
 }
 
 .scroll-overflow {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: calc(100% - 42px);
 }
 
 mat-form-field {
-    height: 50px;
+    height: 60px;
 }

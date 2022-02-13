@@ -1,5 +1,8 @@
 .container-fluid {
     // background-color: #e1e1e1;
+    background-image: url("../../assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-card {
@@ -25,4 +28,8 @@ button {
     color: #ffffff;
     background-color: blue;
     box-shadow: 1px 1px 3px 2px #c3c5f1;
+}
+
+button:disabled {
+    background-color: #7e7e9b !important;
 }

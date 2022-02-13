@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { DashboardService } from 'src/app/services/dashboard.service';
 
 @Component({
@@ -8,7 +9,9 @@ import { DashboardService } from 'src/app/services/dashboard.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private dashboardService: DashboardService) { }
+  constructor(
+    private dashboardService: DashboardService,
+    private ngxLoader: NgxUiLoaderService) { }
 
   todayReport = {
     "cases": 0, "deaths": 0, "recovered": 0
@@ -19,6 +22,7 @@ export class DashboardComponent implements OnInit {
   };
 
   ngOnInit(): void {
+    this.ngxLoader.start();
     this.dashboardService.getDashboardData().subscribe(
       res => {
         console.log(res)
@@ -29,6 +33,8 @@ export class DashboardComponent implements OnInit {
         this.totalReport.cases = res.cases;
         this.totalReport.deaths = res.deaths;
         this.totalReport.recovered = res.recovered;
+
+        this.ngxLoader.stop();
       }
     )
   }

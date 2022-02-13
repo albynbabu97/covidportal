@@ -67,3 +67,73 @@ body {
 .card {
     border: none !important;
 }
+
+.pagination .first-item, .pagination .last-item, .pagination .number-item {
+  display: none !important;
+}
+
+.pagination .page-link {
+  border: none !important;
+}
+
+.pagination li.page-item, li.page-item a {
+  width: 48px;
+  padding: 3px;
+  height: 36px;
+}
+
+.pagination .previous-item.disabled .page-link,
+.pagination .next-item.disabled .page-link,
+.pagination .previous-item .page-link,
+.pagination .next-item .page-link {
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  cursor: pointer;
+  font: 0/0 a;
+}
+
+.pagination .previous-item.disabled .page-link:hover,
+.pagination .next-item.disabled .page-link:hover,
+.pagination .previous-item .page-link:hover,
+.pagination .next-item .page-link:hover {
+  background-color: transparent;
+}
+
+.pagination .previous-item.disabled .page-link {
+  background-image: url("./assets/images/previous-disabled.png");
+}
+
+.pagination .next-item.disabled .page-link {
+  background-image: url("./assets/images/next-disabled.png");
+}
+
+.pagination .previous-item .page-link {
+  background-image: url("./assets/images/previous.png");
+}
+
+.pagination .next-item .page-link {
+  background-image: url("./assets/images/next.png");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4e43ff;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4e43ff;
+}

@@ -17,8 +17,23 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { EditdetailsComponent } from './application/editdetails/editdetails.component';
 import { MatButtonModule } from '@angular/material/button';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import { JwPaginationModule } from 'jw-angular-pagination';
+import { NgxUiLoaderConfig, NgxUiLoaderModule } from "ngx-ui-loader";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+  "fgsColor": "#4e43ff",
+  "fgsPosition": "center-center",
+  "fgsSize": 60,
+  "fgsType": "rectangle-bounce-pulse-out",
+  "overlayColor": "rgba(255,255,255,0.61)",
+  "pbColor": "#4e43ff",
+  "pbDirection": "ltr",
+  "pbThickness": 3,
+  "hasProgressBar": true,
+}
 
 @NgModule({
   declarations: [
@@ -41,7 +56,15 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    JwPaginationModule,
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [
     AuthGuard
